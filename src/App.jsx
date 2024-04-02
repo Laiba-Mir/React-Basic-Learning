@@ -1,18 +1,20 @@
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 
-import { useState } from 'react';
-import './App.css'
-import { FaqeerKyBety } from './components/FaqeerKyBety';
-import Products from './components/Products';
-// import FaqeerKyBety from './components/FaqeerKyBety'; // If no {} indicates, default import.
-// import MeiHonFaqeerkaBeta from './components/FaqeerKyBety'; // I can only change default components name.
-
-
+import Mobiles from "./components/mobiles";
+import "./App.css";
+import Footer from "./components/footer";
+import Header from "./components/header";
 
 function App() {
-       const [name , setName] = useState("Abc");
-return <div>
-         <Products name ="isko zarroat nahiii phr bhii mei pass kar rha hon"/>
-       </div>
+  return (
+    <>
+      <Header />
+      <Mobiles />
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
